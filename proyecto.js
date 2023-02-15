@@ -3,13 +3,6 @@ const ss = {};
 const imgs = {};
 
 (function () {
-  class Animacion extends createjs.MovieClip {
-    constructor() {
-      super();
-      this.actionFrames = [];
-    }
-  }
-
   (lib.AP1 = function () {
     this.initialize(ss['proyecto_atlas_604']);
     this.gotoAndStop(0);
@@ -3938,34 +3931,16 @@ const imgs = {};
     this.initialize(ss['proyecto_atlas_1']);
     this.gotoAndStop(65);
   }).prototype = new createjs.Sprite();
-  // helper functions:
-
-  function mc_symbol_clone() {
-    var clone = this._cloneProps(new this.constructor(this.mode, this.startPosition, this.loop, this.reversed));
-    clone.gotoAndStop(this.currentFrame);
-    clone.paused = this.paused;
-    clone.framerate = this.framerate;
-    return clone;
-  }
 
   function getMCSymbolPrototype(symbol, nominalBounds, frameBounds) {
     var prototype = createjs.extend(symbol, createjs.MovieClip);
-    prototype.clone = mc_symbol_clone;
     prototype.nominalBounds = nominalBounds;
     prototype.frameBounds = frameBounds;
     return prototype;
   }
 
-  (lib.Símbolo175 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo175 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.copiaEXP_FLECHApng18();
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(1));
@@ -3973,16 +3948,8 @@ const imgs = {};
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.Símbolo174 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo174 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.copiaEXP_FLECHApng17();
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(1));
@@ -3990,241 +3957,120 @@ const imgs = {};
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.Símbolo173 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo173 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.copiaEXP_FLECHApng16();
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(1));
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.Símbolo172 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo172 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.copiaEXP_FLECHApng15();
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(1));
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.Símbolo171 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo171 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.copiap1dpng7();
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(1));
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.Símbolo170 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo170 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.copiap5dpng9();
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(1));
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.Símbolo169 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo169 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.copiap15a();
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(1));
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.Símbolo168 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo168 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
-
-    // Capa_1
     this.instance = new lib.copiap15b();
-
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(1));
-
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.Símbolo167 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo167 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.copiaEXP_FLECHApng14();
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(1));
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.Símbolo166 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo166 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.copiap1apng2();
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(1));
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.Símbolo165 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo165 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.copiap1bpng7();
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(1));
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.Símbolo164 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo164 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.copiap1cpng4();
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(1));
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.Símbolo163 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo163 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.copiap1dpng6();
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(1));
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.Símbolo162 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo162 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
-
-    // Capa_1
     this.instance = new lib.copiaEXP_FLECHApng13();
-
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(1));
-
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.Símbolo161 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo161 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
-
-    // Capa_1
     this.instance = new lib.copiap6png3();
-
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(1));
-
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.Símbolo160 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo160 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
-
-    // Capa_1
     this.instance = new lib.copiap7apng3();
-
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(1));
-
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.Símbolo159 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo159 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.copiap7bpng2();
     this.instance_1 = new lib.copiap7apng2();
@@ -4238,258 +4084,112 @@ const imgs = {};
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.Símbolo158 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo158 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.copiaEXP_FLECHApng12();
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(1));
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.Símbolo157 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo157 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
-
-    // Capa_1
     this.instance = new lib.copiaEXP_FLECHApng11();
-
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(1));
-
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.Símbolo156 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo156 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
-
-    // Capa_1
     this.instance = new lib.copiap1cpng3();
-
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(1));
-
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.Símbolo155 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo155 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
-
-    // Capa_1
     this.instance = new lib.copiap5dpng8();
-
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(1));
-
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.Símbolo154 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo154 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
-
-    // Capa_1
     this.instance = new lib.copiap6bpng4();
-
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(1));
-
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.Símbolo153 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo153 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
-
-    // Capa_1
     this.instance = new lib.copiap21apng2();
-
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(1));
-
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.Símbolo152 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo152 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
-
-    // Capa_1
     this.instance = new lib.copiap1bpng6();
-
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(1));
-
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.Símbolo151 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo151 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
-
-    // Capa_1
     this.instance = new lib.copiap5dpng7();
-
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(1));
-
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.Símbolo150 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo150 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
-
-    // Capa_1
     this.instance = new lib.copiap6bpng3();
-
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(1));
-
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.Símbolo149 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo149 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
-
-    // Capa_1
     this.instance = new lib.copiap27apng2();
-
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(1));
-
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.Símbolo148 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo148 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
-
-    // Capa_1
     this.instance = new lib.copiap1apng3();
-
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(1));
-
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.Símbolo147 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo147 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
-
-    // Capa_1
     this.instance = new lib.copiap1bpng8();
-
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(1));
-
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.Símbolo146 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo146 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
-
-    // Capa_1
     this.instance = new lib.copiap1cpng5();
-
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(1));
-
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.Símbolo145 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo145 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.copiap27a();
     this.instance_1 = new lib.copiap6bpng2();
@@ -4505,806 +4205,368 @@ const imgs = {};
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.Símbolo144 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo144 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.copiaEXP_FLECHApng10();
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(1));
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.Símbolo143 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo143 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.copiaEXP_FLECHApng9();
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(1));
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.Símbolo142 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo142 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
-
-    // Capa_1
     this.instance = new lib.p31a();
-
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(1));
-
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.Símbolo141 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo141 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
-
-    // Capa_1
     this.instance = new lib.p31b();
-
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(1));
-
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.Símbolo140 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo140 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
-
-    // Capa_1
     this.instance = new lib.p31c();
-
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(1));
-
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.Símbolo139 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo139 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
-
-    // Capa_1
     this.instance = new lib.p31d();
-
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(1));
-
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.Símbolo138 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo138 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
-
-    // Capa_1
     this.instance = new lib.copiap1bpng4();
-
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(1));
-
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.Símbolo137 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo137 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
-
-    // Capa_1
     this.instance = new lib.copiap5dpng5();
-
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(1));
-
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.Símbolo136 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo136 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
-
-    // Capa_1
     this.instance = new lib.copiap21a();
-
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(1));
-
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.Símbolo135 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo135 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
-
-    // Capa_1
     this.instance = new lib.p30a();
-
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(1));
-
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.Símbolo134 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo134 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
-
-    // Capa_1
     this.instance = new lib.copiaEXP_FLECHApng8();
-
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(1));
-
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.Símbolo133 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo133 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
-
-    // Capa_1
     this.instance = new lib.copiaEXP_FLECHApng7();
-
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(1));
-
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.Símbolo132 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo132 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
-
-    // Capa_1
     this.instance = new lib.copiap6apng3();
-
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(1));
-
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.Símbolo131 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo131 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
-
-    // Capa_1
     this.instance = new lib.copiap6b();
-
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(1));
-
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.Símbolo130 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo130 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
-
-    // Capa_1
     this.instance = new lib.copiap6cpng3();
-
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(1));
-
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.Símbolo129 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo129 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
-
-    // Capa_1
     this.instance = new lib.p27a();
-
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(1));
-
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.Símbolo128 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo128 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
-
-    // Capa_1
     this.instance = new lib.copiaEXP_FLECHApng6();
-
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(1));
-
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.Símbolo127 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo127 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
-
-    // Capa_1
     this.instance = new lib.copiap6cpng2();
-
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(1));
-
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.Símbolo126 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo126 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
-
-    // Capa_1
     this.instance = new lib.copiap1bpng3();
-
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(1));
-
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.Símbolo125 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo125 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
-
-    // Capa_1
     this.instance = new lib.copiap1dpng5();
-
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(1));
-
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.Símbolo124 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo124 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
-
-    // Capa_1
     this.instance = new lib.copiaEXP_FLECHApng5();
-
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(1));
-
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.Símbolo123 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo123 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
-
-    // Capa_1
     this.instance = new lib.copiaEXP_FLECHApng4();
-
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(1));
-
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.Símbolo122 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo122 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
-
-    // Capa_1
     this.instance = new lib.copiap5dpng4();
-
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(1));
-
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.Símbolo121 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo121 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
-
-    // Capa_1
     this.instance = new lib.p22a();
-
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(1));
-
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.Símbolo120 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo120 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
-
-    // Capa_1
     this.instance = new lib.p22b();
-
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(1));
-
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.Símbolo119 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo119 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
-
-    // Capa_1
     this.instance = new lib.p22c();
-
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(1));
-
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.Símbolo118 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo118 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
-
-    // Capa_1
     this.instance = new lib.copiap5dpng3();
-
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(1));
-
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.Símbolo117 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo117 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
-
-    // Capa_1
     this.instance = new lib.copiap20d();
-
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(1));
-
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.Símbolo116 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo116 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
-
-    // Capa_1
     this.instance = new lib.p21a();
-
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(1));
-
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.Símbolo115 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo115 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
-
-    // Capa_1
     this.instance = new lib.p21b();
-
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(1));
-
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.Símbolo114 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo114 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
-
-    // Capa_1
     this.instance = new lib.p201();
-
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(1));
-
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.Símbolo113 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo113 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.p20b();
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(1));
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.Símbolo112 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo112 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.p20d();
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(1));
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.Símbolo111 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo111 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.p20c();
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(1));
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.Símbolo110 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo110 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.copiap1dpng4();
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(1));
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.Símbolo109 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo109 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.p15b();
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(1));
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.Símbolo108 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo108 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.p15a();
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(1));
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.Símbolo107 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo107 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.copiap5dpng2();
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(1));
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.Símbolo106 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo106 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.copiaEXP_FLECHApng3();
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(1));
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.Símbolo105 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo105 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.copiaEXP_FLECHApng2();
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(1));
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.Símbolo104 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo104 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.copiaEXP_FLECHA();
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(1));
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.Símbolo103 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo103 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.copiap1bpng2();
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(1));
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.Símbolo102 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo102 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.copiap1dpng3();
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(1));
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.Símbolo101 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo101 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.copiap1cpng2();
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(1));
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.Símbolo100 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo100 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.copiap1a();
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(1));
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.Símbolo99 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo99 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.p12a();
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(1));
@@ -5312,701 +4574,332 @@ const imgs = {};
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.Símbolo98 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo98 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.copiap6apng2();
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(1));
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.Símbolo97 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo97 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.copiap5d();
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(1));
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.Símbolo96 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo96 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.copiap1c();
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(1));
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.Símbolo95 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo95 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.p11d();
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(1));
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.Símbolo94 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo94 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.p11c();
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(1));
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.Símbolo93 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo93 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.p11b();
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(1));
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.Símbolo92 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo92 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.p11a();
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(1));
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.Símbolo91 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo91 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.copiap7a();
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(1));
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.Símbolo90 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo90 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.copiap7b();
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(1));
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.Símbolo89 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo89 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.copiap6();
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(1));
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.Símbolo88 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo88 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.copiap6c();
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(1));
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.Símbolo87 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo87 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.copiap1dpng2();
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(1));
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.Símbolo86 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo86 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.copiap1b();
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(1));
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.Símbolo85 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo85 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.p8d();
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(1));
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.Símbolo84 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo84 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.p8c();
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(1));
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.Símbolo83 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo83 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.p8b();
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(1));
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.Símbolo82 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo82 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.copiap6a();
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(1));
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.Símbolo81 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo81 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.p7b();
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(1));
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.Símbolo80 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo80 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
-
-    // Capa_1
     this.instance = new lib.p6();
-
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(1));
-
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.Símbolo79 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo79 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
-
-    // Capa_1
     this.instance = new lib.p7a();
-
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(1));
-
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.Símbolo78 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo78 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
-
-    // Capa_1
     this.instance = new lib.p6a();
-
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(1));
-
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.Símbolo77 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo77 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
-
-    // Capa_1
     this.instance = new lib.p6c();
-
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(1));
-
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.Símbolo76 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo76 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
-
-    // Capa_1
     this.instance = new lib.p6b();
-
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(1));
-
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.Símbolo75 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo75 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
-
-    // Capa_1
     this.instance = new lib.p5d();
-
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(1));
-
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.Símbolo74 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo74 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
-
-    // Capa_1
     this.instance = new lib.p5c();
-
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(1));
-
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.Símbolo73 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo73 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
-
-    // Capa_1
     this.instance = new lib.p5b();
-
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(1));
-
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.Símbolo72 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo72 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
-
-    // Capa_1
     this.instance = new lib.p5a();
-
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(1));
-
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.Símbolo71 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo71 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
-
-    // Capa_1
     this.instance = new lib.p4c();
-
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(1));
-
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.Símbolo70 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo70 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
-
-    // Capa_1
     this.instance = new lib.p4b();
-
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(1));
-
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.Símbolo69 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo69 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
-
-    // Capa_1
     this.instance = new lib.p4a();
-
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(1));
-
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.Símbolo67 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo67 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
-
-    // Capa_1
     this.instance = new lib.p3b();
-
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(1));
-
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.Símbolo64 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo64 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
-
-    // Capa_1
     this.instance = new lib.p3a();
     this.instance.setTransform(-79.5, -80);
-
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(1));
-
     this._renderFirstFrame();
   }).prototype = getMCSymbolPrototype(lib.Símbolo64, new createjs.Rectangle(-79.5, -80, 159, 160), null);
 
-  (lib.Símbolo63 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo63 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
-
-    // Capa_1
     this.instance = new lib.P2B();
-
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(1));
-
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.Símbolo62 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo62 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
-
-    // Capa_1
     this.instance = new lib.P2A();
-
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(1));
-
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.Símbolo61 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo61 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
-
-    // Capa_1
     this.instance = new lib.copiaEXP_FLECHApng19();
     this.instance.setTransform(159, 160, 1, 1, 180);
-
     this.timeline.addTween(
       createjs.Tween.get(this.instance).wait(1).to({ scaleX: 1.0781, scaleY: 1.0781, x: 165.4, y: 166.5 }, 0).wait(3)
     );
-
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.Símbolo60 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo60 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
-
-    // Capa_1
     this.instance = new lib.p1c();
     this.instance.setTransform(-79.5, -80);
-
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(1));
-
     this._renderFirstFrame();
   }).prototype = getMCSymbolPrototype(lib.Símbolo60, new createjs.Rectangle(-79.5, -80, 159, 160), null);
 
-  (lib.Símbolo59 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo59 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
-
-    // Capa_1
     this.instance = new lib.p1d();
     this.instance.setTransform(-90.35, -90.95, 1.1369, 1.1369);
-
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(1));
-
     this._renderFirstFrame();
   }).prototype = getMCSymbolPrototype(lib.Símbolo59, new createjs.Rectangle(-90.3, -90.9, 180.7, 181.9), null);
 
-  (lib.Símbolo58 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo58 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
-
-    // Capa_1
     this.instance = new lib.p1b();
     this.instance.setTransform(-79.5, -80);
-
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(1));
-
     this._renderFirstFrame();
   }).prototype = getMCSymbolPrototype(lib.Símbolo58, new createjs.Rectangle(-79.5, -80, 159, 160), null);
 
-  (lib.Símbolo57 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo57 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
-
-    // Capa_1
     this.instance = new lib.p1a();
     this.instance.setTransform(-79.5, -80);
-
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(1));
-
     this._renderFirstFrame();
   }).prototype = getMCSymbolPrototype(lib.Símbolo57, new createjs.Rectangle(-79.5, -80, 159, 160), null);
 
-  (lib.Símbolo56 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo56 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
-
-    // Capa_2
     this.instance = new lib.copiajp3();
     this.instance.setTransform(-959, -538);
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(74));
-
-    // Capa_1
     this.instance_1 = new lib.MFK1_0000();
     this.instance_1.setTransform(-960, -540);
     this.instance_2 = new lib.MFK1_0001();
@@ -6238,24 +5131,12 @@ const imgs = {};
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.Símbolo53 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo53 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
-
-    // Capa_2
     this.instance = new lib.jp2();
     this.instance.setTransform(-959, -538);
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(24));
-
-    // Capa_1
     this.instance_1 = new lib.copiaMFJ1_0000();
     this.instance_1.setTransform(-960, -540);
     this.instance_2 = new lib.copiaMFJ1_0001();
@@ -6337,24 +5218,12 @@ const imgs = {};
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.Símbolo52 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo52 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
-
-    // Capa_2
     this.instance = new lib.JP1();
     this.instance.setTransform(-959, -538);
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(24));
-
-    // Capa_1
     this.instance_1 = new lib.MFJ1_0000();
     this.instance_1.setTransform(-960, -540);
     this.instance_2 = new lib.MFJ1_0001();
@@ -6436,149 +5305,72 @@ const imgs = {};
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.Símbolo51 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo51 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
-
-    // Capa_2
     this.instance = new lib.ip8();
     this.instance.setTransform(-959, -538);
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(1));
-
-    // Capa_1
     this.instance_1 = new lib.copiaMFI1png5();
     this.instance_1.setTransform(-960, -540);
     this.timeline.addTween(createjs.Tween.get(this.instance_1).wait(1));
-
     this._renderFirstFrame();
   }).prototype = getMCSymbolPrototype(lib.Símbolo51, new createjs.Rectangle(-960, -540, 1921, 1082), null);
 
-  (lib.Símbolo50 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo50 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
-
-    // Capa_2
     this.instance = new lib.ip7();
     this.instance.setTransform(-959, -538);
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(1));
-
-    // Capa_1
     this.instance_1 = new lib.copiaMFI1png4();
     this.instance_1.setTransform(-960, -540);
     this.timeline.addTween(createjs.Tween.get(this.instance_1).wait(1));
-
     this._renderFirstFrame();
   }).prototype = getMCSymbolPrototype(lib.Símbolo50, new createjs.Rectangle(-960, -540, 1921, 1082), null);
 
-  (lib.Símbolo49 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo49 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
-
-    // Capa_2
     this.instance = new lib.ip6();
     this.instance.setTransform(-959, -538);
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(1));
-
-    // Capa_1
     this.instance_1 = new lib.copiaMFI1png3();
     this.instance_1.setTransform(-960, -540);
     this.timeline.addTween(createjs.Tween.get(this.instance_1).wait(1));
-
     this._renderFirstFrame();
   }).prototype = getMCSymbolPrototype(lib.Símbolo49, new createjs.Rectangle(-960, -540, 1921, 1082), null);
 
-  (lib.Símbolo48 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo48 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
-
-    // Capa_2
     this.instance = new lib.ip4();
     this.instance.setTransform(-959, -538);
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(1));
-
-    // Capa_1
     this.instance_1 = new lib.copiaMFI1png2();
     this.instance_1.setTransform(-960, -540);
     this.timeline.addTween(createjs.Tween.get(this.instance_1).wait(1));
-
     this._renderFirstFrame();
   }).prototype = getMCSymbolPrototype(lib.Símbolo48, new createjs.Rectangle(-960, -540, 1921, 1082), null);
 
-  (lib.Símbolo47 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo47 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
-
-    // Capa_2
     this.instance = new lib.ip2();
     this.instance.setTransform(-959, -538);
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(1));
-
-    // Capa_1
     this.instance_1 = new lib.copiaMFI1();
     this.instance_1.setTransform(-960, -540);
     this.timeline.addTween(createjs.Tween.get(this.instance_1).wait(1));
-
     this._renderFirstFrame();
   }).prototype = getMCSymbolPrototype(lib.Símbolo47, new createjs.Rectangle(-960, -540, 1921, 1082), null);
 
-  (lib.Símbolo46 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo46 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
-
-    // Capa_2
     this.instance = new lib.IP1();
     this.instance.setTransform(-959, -538);
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(1));
-
-    // Capa_1
     this.instance_1 = new lib.MFI1();
     this.instance_1.setTransform(-960, -540);
     this.timeline.addTween(createjs.Tween.get(this.instance_1).wait(1));
@@ -6586,22 +5378,11 @@ const imgs = {};
     this._renderFirstFrame();
   }).prototype = getMCSymbolPrototype(lib.Símbolo46, new createjs.Rectangle(-960, -540, 1921, 1082), null);
 
-  (lib.Símbolo45 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo45 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
-
-    // Capa_1
     this.instance = new lib.HP5();
     this.instance.setTransform(-959, -538);
-
     this.instance_1 = new lib.MFH1_0003();
     this.instance_1.setTransform(-960, -540);
     this.timeline.addTween(
@@ -6609,79 +5390,39 @@ const imgs = {};
         .to({ state: [{ t: this.instance_1 }, { t: this.instance }] })
         .wait(1)
     );
-
     this._renderFirstFrame();
   }).prototype = getMCSymbolPrototype(lib.Símbolo45, new createjs.Rectangle(-960, -540, 1921, 1082), null);
 
-  (lib.Símbolo44 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo44 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
-
-    // Capa_2
     this.instance = new lib.HP4();
     this.instance.setTransform(-959, -538);
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(1));
-
-    // Capa_1
     this.instance_1 = new lib.MFH1_0002();
     this.instance_1.setTransform(-960, -540);
-
     this.timeline.addTween(createjs.Tween.get(this.instance_1).wait(1));
-
     this._renderFirstFrame();
   }).prototype = getMCSymbolPrototype(lib.Símbolo44, new createjs.Rectangle(-960, -540, 1921, 1082), null);
 
-  (lib.Símbolo43 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo43 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
-
-    // Capa_2
     this.instance = new lib.hp2();
     this.instance.setTransform(-959, -538);
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(1));
-
-    // Capa_1
     this.instance_1 = new lib.MFH1_0001();
     this.instance_1.setTransform(-960, -540);
     this.timeline.addTween(createjs.Tween.get(this.instance_1).wait(1));
-
     this._renderFirstFrame();
   }).prototype = getMCSymbolPrototype(lib.Símbolo43, new createjs.Rectangle(-960, -540, 1921, 1082), null);
 
-  (lib.Símbolo42 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo42 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
-
-    // Capa_2
     this.instance = new lib.hp1();
     this.instance.setTransform(-959, -538);
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(1));
-
-    // Capa_1
     this.instance_1 = new lib.MFH1_0000();
     this.instance_1.setTransform(-960, -540);
     this.timeline.addTween(createjs.Tween.get(this.instance_1).wait(1));
@@ -6689,24 +5430,12 @@ const imgs = {};
     this._renderFirstFrame();
   }).prototype = getMCSymbolPrototype(lib.Símbolo42, new createjs.Rectangle(-960, -540, 1921, 1082), null);
 
-  (lib.Símbolo41 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo41 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
-
-    // Capa_2
     this.instance = new lib.EP5();
     this.instance.setTransform(-959, -538);
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(28));
-
-    // Capa_1
     this.instance_1 = new lib.copiaMFE1_0000png3();
     this.instance_1.setTransform(-960, -540);
     this.instance_2 = new lib.copiaMFE1_0001png3();
@@ -6800,25 +5529,12 @@ const imgs = {};
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.Símbolo40 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo40 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
-
-    // Capa_2
     this.instance = new lib.EP4();
     this.instance.setTransform(-959, -538);
-
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(28));
-
-    // Capa_1
     this.instance_1 = new lib.copiaMFE1_0000png2();
     this.instance_1.setTransform(-960, -540);
     this.instance_2 = new lib.copiaMFE1_0001png2();
@@ -6912,25 +5628,12 @@ const imgs = {};
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.Símbolo39 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo39 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
-
-    // Capa_2
     this.instance = new lib.EP2();
     this.instance.setTransform(-959, -538);
-
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(28));
-
-    // Capa_1
     this.instance_1 = new lib.copiaMFE1_0000();
     this.instance_1.setTransform(-960, -540);
     this.instance_2 = new lib.copiaMFE1_0001();
@@ -7024,25 +5727,12 @@ const imgs = {};
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.Símbolo38 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo38 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
-
-    // Capa_2
     this.instance = new lib.EP1();
     this.instance.setTransform(-959, -538);
-
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(28));
-
-    // Capa_1
     this.instance_1 = new lib.MFE1_0000();
     this.instance_1.setTransform(-960, -540);
     this.instance_2 = new lib.MFE1_0001();
@@ -7136,70 +5826,32 @@ const imgs = {};
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.Símbolo37 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo37 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
-
-    // Capa_2
     this.instance = new lib.DP8();
     this.instance.setTransform(-959, -538);
-
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(1));
-
-    // Capa_1
     this.instance_1 = new lib.MFD1_0003();
     this.instance_1.setTransform(-960, -540);
-
     this.timeline.addTween(createjs.Tween.get(this.instance_1).wait(1));
-
     this._renderFirstFrame();
   }).prototype = getMCSymbolPrototype(lib.Símbolo37, new createjs.Rectangle(-960, -540, 1921, 1082), null);
 
-  (lib.Símbolo36 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo36 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
-
-    // Capa_2
     this.instance = new lib.DP7();
     this.instance.setTransform(-959, -538);
-
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(1));
-
-    // Capa_1
     this.instance_1 = new lib.MFD1_0002();
     this.instance_1.setTransform(-960, -540);
-
     this.timeline.addTween(createjs.Tween.get(this.instance_1).wait(1));
-
     this._renderFirstFrame();
   }).prototype = getMCSymbolPrototype(lib.Símbolo36, new createjs.Rectangle(-960, -540, 1921, 1082), null);
 
-  (lib.Símbolo35 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo35 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.DP5();
     this.instance.setTransform(-959, -538);
@@ -7210,16 +5862,8 @@ const imgs = {};
     this._renderFirstFrame();
   }).prototype = getMCSymbolPrototype(lib.Símbolo35, new createjs.Rectangle(-960, -540, 1921, 1082), null);
 
-  (lib.Símbolo34 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo34 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.dp1();
     this.instance.setTransform(-959, -538);
@@ -7230,16 +5874,8 @@ const imgs = {};
     this._renderFirstFrame();
   }).prototype = getMCSymbolPrototype(lib.Símbolo34, new createjs.Rectangle(-960, -540, 1921, 1082), null);
 
-  (lib.Símbolo33 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo33 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.CP7();
     this.instance.setTransform(-959, -538);
@@ -7250,16 +5886,8 @@ const imgs = {};
     this._renderFirstFrame();
   }).prototype = getMCSymbolPrototype(lib.Símbolo33, new createjs.Rectangle(-960, -540, 1921, 1082), null);
 
-  (lib.Símbolo32 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo32 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.cp10();
     this.instance.setTransform(-959, -538);
@@ -7270,16 +5898,8 @@ const imgs = {};
     this._renderFirstFrame();
   }).prototype = getMCSymbolPrototype(lib.Símbolo32, new createjs.Rectangle(-960, -540, 1921, 1082), null);
 
-  (lib.Símbolo31 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo31 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.cp11();
     this.instance.setTransform(-959, -538);
@@ -7290,16 +5910,8 @@ const imgs = {};
     this._renderFirstFrame();
   }).prototype = getMCSymbolPrototype(lib.Símbolo31, new createjs.Rectangle(-960, -540, 1921, 1082), null);
 
-  (lib.Símbolo30 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo30 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.cp13();
     this.instance.setTransform(-959, -538);
@@ -7310,16 +5922,8 @@ const imgs = {};
     this._renderFirstFrame();
   }).prototype = getMCSymbolPrototype(lib.Símbolo30, new createjs.Rectangle(-960, -540, 1921, 1082), null);
 
-  (lib.Símbolo29 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo29 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.CP6();
     this.instance.setTransform(-959, -538);
@@ -7330,16 +5934,8 @@ const imgs = {};
     this._renderFirstFrame();
   }).prototype = getMCSymbolPrototype(lib.Símbolo29, new createjs.Rectangle(-960, -540, 1921, 1082), null);
 
-  (lib.Símbolo28 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo28 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.CP5();
     this.instance.setTransform(-959, -538);
@@ -7350,16 +5946,8 @@ const imgs = {};
     this._renderFirstFrame();
   }).prototype = getMCSymbolPrototype(lib.Símbolo28, new createjs.Rectangle(-960, -540, 1921, 1082), null);
 
-  (lib.Símbolo27 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo27 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.CP4();
     this.instance.setTransform(-959, -538);
@@ -7370,16 +5958,8 @@ const imgs = {};
     this._renderFirstFrame();
   }).prototype = getMCSymbolPrototype(lib.Símbolo27, new createjs.Rectangle(-960, -540, 1921, 1082), null);
 
-  (lib.Símbolo26 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo26 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.CP3();
     this.instance.setTransform(-959, -538);
@@ -7390,16 +5970,8 @@ const imgs = {};
     this._renderFirstFrame();
   }).prototype = getMCSymbolPrototype(lib.Símbolo26, new createjs.Rectangle(-960, -540, 1921, 1082), null);
 
-  (lib.Símbolo25 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo25 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.BP7();
     this.instance.setTransform(-959, -538);
@@ -7410,16 +5982,8 @@ const imgs = {};
     this._renderFirstFrame();
   }).prototype = getMCSymbolPrototype(lib.Símbolo25, new createjs.Rectangle(-960, -540, 1921, 1082), null);
 
-  (lib.Símbolo24 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo24 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.BP6();
     this.instance.setTransform(-959, -538);
@@ -7430,16 +5994,8 @@ const imgs = {};
     this._renderFirstFrame();
   }).prototype = getMCSymbolPrototype(lib.Símbolo24, new createjs.Rectangle(-960, -540, 1921, 1082), null);
 
-  (lib.Símbolo23 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo23 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.BP4();
     this.instance.setTransform(-959, -538);
@@ -7450,16 +6006,8 @@ const imgs = {};
     this._renderFirstFrame();
   }).prototype = getMCSymbolPrototype(lib.Símbolo23, new createjs.Rectangle(-960, -540, 1921, 1082), null);
 
-  (lib.Símbolo22 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo22 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.BP2();
     this.instance.setTransform(-959, -538);
@@ -7470,16 +6018,8 @@ const imgs = {};
     this._renderFirstFrame();
   }).prototype = getMCSymbolPrototype(lib.Símbolo22, new createjs.Rectangle(-960, -540, 1921, 1082), null);
 
-  (lib.Símbolo21 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo21 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.BP1();
     this.instance.setTransform(-959, -538);
@@ -7490,16 +6030,8 @@ const imgs = {};
     this._renderFirstFrame();
   }).prototype = getMCSymbolPrototype(lib.Símbolo21, new createjs.Rectangle(-960, -540, 1921, 1082), null);
 
-  (lib.Símbolo20 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo20 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.AP13();
     this.instance.setTransform(-959, 0);
@@ -7586,15 +6118,8 @@ const imgs = {};
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.Símbolo19 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo19 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.AP12();
     this.instance.setTransform(-959, 0);
@@ -7680,15 +6205,8 @@ const imgs = {};
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.Símbolo18 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo18 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.AP11();
     this.instance.setTransform(-959, 0);
@@ -7774,15 +6292,8 @@ const imgs = {};
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.Símbolo17 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo17 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.AP9();
     this.instance.setTransform(-959, 0);
@@ -7868,15 +6379,8 @@ const imgs = {};
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.Símbolo16 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo16 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.AP8();
     this.instance.setTransform(-959, -538);
@@ -7962,24 +6466,12 @@ const imgs = {};
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.Símbolo15 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo15 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
-
-    // Capa_2
     this.instance = new lib.AP7();
     this.instance.setTransform(-959, -538);
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(24));
-
-    // Capa_1
     this.instance_1 = new lib.copiaMFA2GEN_0000png2();
     this.instance_1.setTransform(-960, -540);
     this.instance_2 = new lib.copiaMFA2GEN_0001png2();
@@ -8061,23 +6553,12 @@ const imgs = {};
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.Símbolo14 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo14 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
-
-    // Capa_2
     this.instance = new lib.AP6();
     this.instance.setTransform(-959, -538);
     this.timeline.addTween(createjs.Tween.get(this.instance).wait(24));
-
-    // Capa_1
     this.instance_1 = new lib.copiaMFA2GEN_0000();
     this.instance_1.setTransform(-960, -540);
     this.instance_2 = new lib.copiaMFA2GEN_0001();
@@ -8159,15 +6640,8 @@ const imgs = {};
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.Símbolo13 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo13 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.AP5();
     this.instance.setTransform(-959, -538);
@@ -8253,15 +6727,8 @@ const imgs = {};
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.Símbolo12 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo12 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.AP4();
     this.instance.setTransform(-959, -538);
@@ -8484,15 +6951,8 @@ const imgs = {};
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.Símbolo11 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo11 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.AP3();
     this.instance.setTransform(-959, -538);
@@ -8578,15 +7038,8 @@ const imgs = {};
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.Símbolo10 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo10 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.copiaMFAGEN_0010();
     this.instance.setTransform(-960, -540);
@@ -8594,15 +7047,8 @@ const imgs = {};
     this._renderFirstFrame();
   }).prototype = getMCSymbolPrototype(lib.Símbolo10, new createjs.Rectangle(-960, -540, 1920, 1080), null);
 
-  (lib.Símbolo9 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo9 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.copiaMFAGEN_0009();
     this.instance.setTransform(-960, -540);
@@ -8610,15 +7056,8 @@ const imgs = {};
     this._renderFirstFrame();
   }).prototype = getMCSymbolPrototype(lib.Símbolo9, new createjs.Rectangle(-960, -540, 1920, 1080), null);
 
-  (lib.Símbolo8 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo8 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.copiaMFAGEN_0008();
     this.instance.setTransform(-960, -540);
@@ -8626,15 +7065,8 @@ const imgs = {};
     this._renderFirstFrame();
   }).prototype = getMCSymbolPrototype(lib.Símbolo8, new createjs.Rectangle(-960, -540, 1920, 1080), null);
 
-  (lib.Símbolo7 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo7 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.copiaMFAGEN_0007();
     this.instance.setTransform(-960, -540);
@@ -8642,15 +7074,8 @@ const imgs = {};
     this._renderFirstFrame();
   }).prototype = getMCSymbolPrototype(lib.Símbolo7, new createjs.Rectangle(-960, -540, 1920, 1080), null);
 
-  (lib.Símbolo6 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo6 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.copiaMFAGEN_0006();
     this.instance.setTransform(-960, -540);
@@ -8658,15 +7083,8 @@ const imgs = {};
     this._renderFirstFrame();
   }).prototype = getMCSymbolPrototype(lib.Símbolo6, new createjs.Rectangle(-960, -540, 1920, 1080), null);
 
-  (lib.Símbolo5 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo5 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.copiaMFAGEN_0005();
     this.instance.setTransform(-960, -540);
@@ -8674,15 +7092,8 @@ const imgs = {};
     this._renderFirstFrame();
   }).prototype = getMCSymbolPrototype(lib.Símbolo5, new createjs.Rectangle(-960, -540, 1920, 1080), null);
 
-  (lib.Símbolo4 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo4 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.copiaMFAGEN_0004();
     this.instance.setTransform(-960, -540);
@@ -8690,15 +7101,8 @@ const imgs = {};
     this._renderFirstFrame();
   }).prototype = getMCSymbolPrototype(lib.Símbolo4, new createjs.Rectangle(-960, -540, 1920, 1080), null);
 
-  (lib.Símbolo3 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo3 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.copiaMFAGEN_0003();
     this.instance.setTransform(-960, -540);
@@ -8706,15 +7110,8 @@ const imgs = {};
     this._renderFirstFrame();
   }).prototype = getMCSymbolPrototype(lib.Símbolo3, new createjs.Rectangle(-960, -540, 1920, 1080), null);
 
-  (lib.Símbolo2 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo2 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.copiaMFAGEN_0002();
     this.instance.setTransform(-960, -540);
@@ -8722,15 +7119,8 @@ const imgs = {};
     this._renderFirstFrame();
   }).prototype = getMCSymbolPrototype(lib.Símbolo2, new createjs.Rectangle(-960, -540, 1920, 1080), null);
 
-  (lib.Símbolo1 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.Símbolo1 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.copiaMFAGEN_0001();
     this.instance.setTransform(-960, -540);
@@ -8738,15 +7128,8 @@ const imgs = {};
     this._renderFirstFrame();
   }).prototype = getMCSymbolPrototype(lib.Símbolo1, new createjs.Rectangle(-960, -540, 1920, 1080), null);
 
-  (lib.EXP_FLECHA_ANIM = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.EXP_FLECHA_ANIM = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.EXP_FLECHA();
     this.instance.setTransform(-86, -86, 1.0792, 1.0792);
@@ -8754,15 +7137,8 @@ const imgs = {};
     this._renderFirstFrame();
   }).prototype = getMCSymbolPrototype(lib.EXP_FLECHA_ANIM, new createjs.Rectangle(-86, -86, 171.6, 172.7), null);
 
-  (lib.ESC_INTRO_36 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.ESC_INTRO_36 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.MFINTROGEN_0035();
     this.instance.setTransform(-960, -540);
@@ -8770,15 +7146,8 @@ const imgs = {};
     this._renderFirstFrame();
   }).prototype = getMCSymbolPrototype(lib.ESC_INTRO_36, new createjs.Rectangle(-960, -540, 1920, 1080), null);
 
-  (lib.ESC_INTRO_32 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.ESC_INTRO_32 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.MFINTROGEN_0031();
     this.instance.setTransform(-960, -540);
@@ -8786,15 +7155,8 @@ const imgs = {};
     this._renderFirstFrame();
   }).prototype = getMCSymbolPrototype(lib.ESC_INTRO_32, new createjs.Rectangle(-960, -540, 1920, 1080), null);
 
-  (lib.ESC_INTRO_30 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.ESC_INTRO_30 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.MFINTROGEN_0029();
     this.instance.setTransform(-960, -540);
@@ -8802,15 +7164,8 @@ const imgs = {};
     this._renderFirstFrame();
   }).prototype = getMCSymbolPrototype(lib.ESC_INTRO_30, new createjs.Rectangle(-960, -540, 1920, 1080), null);
 
-  (lib.ESC_INTRO_28 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.ESC_INTRO_28 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.MFINTROGEN_0027();
     this.instance.setTransform(-960, -540);
@@ -8818,15 +7173,8 @@ const imgs = {};
     this._renderFirstFrame();
   }).prototype = getMCSymbolPrototype(lib.ESC_INTRO_28, new createjs.Rectangle(-960, -540, 1920, 1080), null);
 
-  (lib.ESC_INTRO_26 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.ESC_INTRO_26 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.MFINTROGEN_0025();
     this.instance.setTransform(-960, -540);
@@ -8835,15 +7183,8 @@ const imgs = {};
     this._renderFirstFrame();
   }).prototype = getMCSymbolPrototype(lib.ESC_INTRO_26, new createjs.Rectangle(-960, -540, 1920, 1080), null);
 
-  (lib.ESC_INTRO_24 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.ESC_INTRO_24 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.MFINTROGEN_0023();
     this.instance.setTransform(-960, -540);
@@ -8851,15 +7192,8 @@ const imgs = {};
     this._renderFirstFrame();
   }).prototype = getMCSymbolPrototype(lib.ESC_INTRO_24, new createjs.Rectangle(-960, -540, 1920, 1080), null);
 
-  (lib.ESC_INTRO_22 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.ESC_INTRO_22 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.MFINTROGEN_0021();
     this.instance.setTransform(-960, -540);
@@ -8867,15 +7201,8 @@ const imgs = {};
     this._renderFirstFrame();
   }).prototype = getMCSymbolPrototype(lib.ESC_INTRO_22, new createjs.Rectangle(-960, -540, 1920, 1080), null);
 
-  (lib.ESC_INTRO_20 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.ESC_INTRO_20 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.MFINTROGEN_0019();
     this.instance.setTransform(-960, -540);
@@ -8883,15 +7210,8 @@ const imgs = {};
     this._renderFirstFrame();
   }).prototype = getMCSymbolPrototype(lib.ESC_INTRO_20, new createjs.Rectangle(-960, -540, 1920, 1080), null);
 
-  (lib.ESC_INTRO_18 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.ESC_INTRO_18 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.MFINTROGEN_0017();
     this.instance.setTransform(-960, -540);
@@ -8899,15 +7219,8 @@ const imgs = {};
     this._renderFirstFrame();
   }).prototype = getMCSymbolPrototype(lib.ESC_INTRO_18, new createjs.Rectangle(-960, -540, 1920, 1080), null);
 
-  (lib.ESC_INTRO_16 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.ESC_INTRO_16 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.MFINTROGEN_0015();
     this.instance.setTransform(-960, -540);
@@ -8915,15 +7228,8 @@ const imgs = {};
     this._renderFirstFrame();
   }).prototype = getMCSymbolPrototype(lib.ESC_INTRO_16, new createjs.Rectangle(-960, -540, 1920, 1080), null);
 
-  (lib.ESC_INTRO_14 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.ESC_INTRO_14 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.MFINTROGEN_0013();
     this.instance.setTransform(-960, -540);
@@ -8931,15 +7237,8 @@ const imgs = {};
     this._renderFirstFrame();
   }).prototype = getMCSymbolPrototype(lib.ESC_INTRO_14, new createjs.Rectangle(-960, -540, 1920, 1080), null);
 
-  (lib.ESC_INTRO_12 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.ESC_INTRO_12 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.MFINTROGEN_0011();
     this.instance.setTransform(-960, -540);
@@ -8947,15 +7246,8 @@ const imgs = {};
     this._renderFirstFrame();
   }).prototype = getMCSymbolPrototype(lib.ESC_INTRO_12, new createjs.Rectangle(-960, -540, 1920, 1080), null);
 
-  (lib.ESC_INTRO_10 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.ESC_INTRO_10 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.MFINTROGEN_0009();
     this.instance.setTransform(-960, -540);
@@ -8963,15 +7255,8 @@ const imgs = {};
     this._renderFirstFrame();
   }).prototype = getMCSymbolPrototype(lib.ESC_INTRO_10, new createjs.Rectangle(-960, -540, 1920, 1080), null);
 
-  (lib.ESC_INTRO_8 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.ESC_INTRO_8 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.MFINTROGEN_0007();
     this.instance.setTransform(-960, -540);
@@ -8979,15 +7264,8 @@ const imgs = {};
     this._renderFirstFrame();
   }).prototype = getMCSymbolPrototype(lib.ESC_INTRO_8, new createjs.Rectangle(-960, -540, 1920, 1080), null);
 
-  (lib.ESC_INTRO_6 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.ESC_INTRO_6 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.MFINTROGEN_0005();
     this.instance.setTransform(-960, -540);
@@ -8995,15 +7273,8 @@ const imgs = {};
     this._renderFirstFrame();
   }).prototype = getMCSymbolPrototype(lib.ESC_INTRO_6, new createjs.Rectangle(-960, -540, 1920, 1080), null);
 
-  (lib.ESC_INTRO_4 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.ESC_INTRO_4 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.MFINTROGEN_0003();
     this.instance.setTransform(-960, -540);
@@ -9011,15 +7282,8 @@ const imgs = {};
     this._renderFirstFrame();
   }).prototype = getMCSymbolPrototype(lib.ESC_INTRO_4, new createjs.Rectangle(-960, -540, 1920, 1080), null);
 
-  (lib.ESC_INTRO_2 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.ESC_INTRO_2 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.MFINTROGEN_0001();
     this.instance.setTransform(-960, -540);
@@ -9027,15 +7291,8 @@ const imgs = {};
     this._renderFirstFrame();
   }).prototype = getMCSymbolPrototype(lib.ESC_INTRO_2, new createjs.Rectangle(-960, -540, 1920, 1080), null);
 
-  (lib.ESC_EXP_1 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.ESC_EXP_1 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.MFEXPGEN_0000();
     this.instance.setTransform(-960, -540);
@@ -9043,15 +7300,8 @@ const imgs = {};
     this._renderFirstFrame();
   }).prototype = getMCSymbolPrototype(lib.ESC_EXP_1, new createjs.Rectangle(-960, -540, 1920, 1080), null);
 
-  (lib.BT_COMENZARANIM = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.BT_COMENZARANIM = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.boton();
     this.instance.setTransform(-269, -81, 1.0287, 1.0287);
@@ -9059,15 +7309,8 @@ const imgs = {};
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.A1_23 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.A1_23 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.MFAGEN_0022();
     this.instance.setTransform(-960, -540);
@@ -9076,15 +7319,8 @@ const imgs = {};
     this._renderFirstFrame();
   }).prototype = getMCSymbolPrototype(lib.A1_23, new createjs.Rectangle(-960, -540, 1920, 1080), null);
 
-  (lib.A1_22 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.A1_22 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.MFAGEN_0021();
     this.instance.setTransform(-960, -540);
@@ -9092,15 +7328,8 @@ const imgs = {};
     this._renderFirstFrame();
   }).prototype = getMCSymbolPrototype(lib.A1_22, new createjs.Rectangle(-960, -540, 1920, 1080), null);
 
-  (lib.A1_21 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.A1_21 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.MFAGEN_0020();
     this.instance.setTransform(-960, -540);
@@ -9108,15 +7337,8 @@ const imgs = {};
     this._renderFirstFrame();
   }).prototype = getMCSymbolPrototype(lib.A1_21, new createjs.Rectangle(-960, -540, 1920, 1080), null);
 
-  (lib.A1_20 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.A1_20 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.MFAGEN_0019();
     this.instance.setTransform(-960, -540);
@@ -9124,15 +7346,8 @@ const imgs = {};
     this._renderFirstFrame();
   }).prototype = getMCSymbolPrototype(lib.A1_20, new createjs.Rectangle(-960, -540, 1920, 1080), null);
 
-  (lib.A1_19 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.A1_19 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.MFAGEN_0018();
     this.instance.setTransform(-960, -540);
@@ -9140,15 +7355,8 @@ const imgs = {};
     this._renderFirstFrame();
   }).prototype = getMCSymbolPrototype(lib.A1_19, new createjs.Rectangle(-960, -540, 1920, 1080), null);
 
-  (lib.A1_18 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.A1_18 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.MFAGEN_0017();
     this.instance.setTransform(-960, -540);
@@ -9157,15 +7365,8 @@ const imgs = {};
     this._renderFirstFrame();
   }).prototype = getMCSymbolPrototype(lib.A1_18, new createjs.Rectangle(-960, -540, 1920, 1080), null);
 
-  (lib.A1_17 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.A1_17 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.MFAGEN_0016();
     this.instance.setTransform(-960, -540);
@@ -9173,15 +7374,8 @@ const imgs = {};
     this._renderFirstFrame();
   }).prototype = getMCSymbolPrototype(lib.A1_17, new createjs.Rectangle(-960, -540, 1920, 1080), null);
 
-  (lib.A1_16 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.A1_16 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.MFAGEN_0015();
     this.instance.setTransform(-960, -540);
@@ -9189,15 +7383,8 @@ const imgs = {};
     this._renderFirstFrame();
   }).prototype = getMCSymbolPrototype(lib.A1_16, new createjs.Rectangle(-960, -540, 1920, 1080), null);
 
-  (lib.A1_15 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.A1_15 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.MFAGEN_0014();
     this.instance.setTransform(-960, -540);
@@ -9205,15 +7392,8 @@ const imgs = {};
     this._renderFirstFrame();
   }).prototype = getMCSymbolPrototype(lib.A1_15, new createjs.Rectangle(-960, -540, 1920, 1080), null);
 
-  (lib.A1_14 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.A1_14 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.MFAGEN_0013();
     this.instance.setTransform(-960, -540);
@@ -9221,15 +7401,8 @@ const imgs = {};
     this._renderFirstFrame();
   }).prototype = getMCSymbolPrototype(lib.A1_14, new createjs.Rectangle(-960, -540, 1920, 1080), null);
 
-  (lib.A1_13 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.A1_13 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.MFAGEN_0012();
     this.instance.setTransform(-960, -540);
@@ -9237,15 +7410,8 @@ const imgs = {};
     this._renderFirstFrame();
   }).prototype = getMCSymbolPrototype(lib.A1_13, new createjs.Rectangle(-960, -540, 1920, 1080), null);
 
-  (lib.A1_12 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.A1_12 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.MFAGEN_0011();
     this.instance.setTransform(-960, -540);
@@ -9253,15 +7419,8 @@ const imgs = {};
     this._renderFirstFrame();
   }).prototype = getMCSymbolPrototype(lib.A1_12, new createjs.Rectangle(-960, -540, 1920, 1080), null);
 
-  (lib.A1_11 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.A1_11 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.MFAGEN_0010();
     this.instance.setTransform(-960, -540);
@@ -9269,15 +7428,8 @@ const imgs = {};
     this._renderFirstFrame();
   }).prototype = getMCSymbolPrototype(lib.A1_11, new createjs.Rectangle(-960, -540, 1920, 1080), null);
 
-  (lib.A1_10 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.A1_10 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.MFAGEN_0009();
     this.instance.setTransform(-960, -540);
@@ -9285,15 +7437,8 @@ const imgs = {};
     this._renderFirstFrame();
   }).prototype = getMCSymbolPrototype(lib.A1_10, new createjs.Rectangle(-960, -540, 1920, 1080), null);
 
-  (lib.A1_9 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.A1_9 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.MFAGEN_0008();
     this.instance.setTransform(-960, -540);
@@ -9301,15 +7446,8 @@ const imgs = {};
     this._renderFirstFrame();
   }).prototype = getMCSymbolPrototype(lib.A1_9, new createjs.Rectangle(-960, -540, 1920, 1080), null);
 
-  (lib.A1_8 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.A1_8 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.MFAGEN_0007();
     this.instance.setTransform(-960, -540);
@@ -9317,15 +7455,8 @@ const imgs = {};
     this._renderFirstFrame();
   }).prototype = getMCSymbolPrototype(lib.A1_8, new createjs.Rectangle(-960, -540, 1920, 1080), null);
 
-  (lib.A1_7 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.A1_7 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.MFAGEN_0006();
     this.instance.setTransform(-960, -540);
@@ -9333,15 +7464,8 @@ const imgs = {};
     this._renderFirstFrame();
   }).prototype = getMCSymbolPrototype(lib.A1_7, new createjs.Rectangle(-960, -540, 1920, 1080), null);
 
-  (lib.A1_6 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.A1_6 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.MFAGEN_0005();
     this.instance.setTransform(-960, -540);
@@ -9349,15 +7473,8 @@ const imgs = {};
     this._renderFirstFrame();
   }).prototype = getMCSymbolPrototype(lib.A1_6, new createjs.Rectangle(-960, -540, 1920, 1080), null);
 
-  (lib.A1_5 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.A1_5 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.MFAGEN_0004();
     this.instance.setTransform(-960, -540);
@@ -9365,15 +7482,8 @@ const imgs = {};
     this._renderFirstFrame();
   }).prototype = getMCSymbolPrototype(lib.A1_5, new createjs.Rectangle(-960, -540, 1920, 1080), null);
 
-  (lib.A1_4 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.A1_4 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.MFAGEN_0003();
     this.instance.setTransform(-960, -540);
@@ -9381,15 +7491,8 @@ const imgs = {};
     this._renderFirstFrame();
   }).prototype = getMCSymbolPrototype(lib.A1_4, new createjs.Rectangle(-960, -540, 1920, 1080), null);
 
-  (lib.A1_3 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.A1_3 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.MFAGEN_0002();
     this.instance.setTransform(-960, -540);
@@ -9397,15 +7500,8 @@ const imgs = {};
     this._renderFirstFrame();
   }).prototype = getMCSymbolPrototype(lib.A1_3, new createjs.Rectangle(-960, -540, 1920, 1080), null);
 
-  (lib.A1_2 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.A1_2 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.MFAGEN_0001();
     this.instance.setTransform(-960, -540);
@@ -9413,15 +7509,8 @@ const imgs = {};
     this._renderFirstFrame();
   }).prototype = getMCSymbolPrototype(lib.A1_2, new createjs.Rectangle(-960, -540, 1920, 1080), null);
 
-  (lib.ESC_INTRO_34 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.ESC_INTRO_34 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.MFINTROGEN_0033();
     this.instance.setTransform(-960, -540);
@@ -9429,15 +7518,8 @@ const imgs = {};
     this._renderFirstFrame();
   }).prototype = getMCSymbolPrototype(lib.ESC_INTRO_34, new createjs.Rectangle(-960, -540, 1920, 1080), null);
 
-  (lib.pp1d = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.pp1d = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.p1c();
     this.instance.setTransform(-79.5, -80);
@@ -9454,15 +7536,8 @@ const imgs = {};
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.p1c_1 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.p1c_1 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.p1d();
     this.instance.setTransform(-79.5, -80);
@@ -9479,15 +7554,8 @@ const imgs = {};
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.p1b_1 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.p1b_1 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.p1b();
     this.instance.setTransform(-79.5, -80);
@@ -9505,15 +7573,8 @@ const imgs = {};
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.p1a_1 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.p1a_1 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.p1a();
     this.instance.setTransform(-79.5, -80);
@@ -9530,15 +7591,8 @@ const imgs = {};
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.EXP_FLECHA_1 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.EXP_FLECHA_1 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.EXP_FLECHA();
     this.instance.setTransform(-79.5, -80);
@@ -9555,15 +7609,8 @@ const imgs = {};
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.ESC_INTRO = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.ESC_INTRO = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
 
     this.instance_1 = new lib.ESC_INTRO_2();
@@ -9611,15 +7658,8 @@ const imgs = {};
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.ESC_EXP = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.ESC_EXP = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.EXP_TEXTO();
     this.instance.setTransform(-959, -538);
@@ -9704,15 +7744,8 @@ const imgs = {};
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.BT_COMENZAR = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.BT_COMENZAR = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.boton();
     this.instance.setTransform(-262, -79);
@@ -9731,15 +7764,8 @@ const imgs = {};
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.A1_1 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.A1_1 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.AP1();
     this.instance.setTransform(-959, -538);
@@ -9801,15 +7827,8 @@ const imgs = {};
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.AP2_1 = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-    const labels = {};
-    const props = { mode, startPosition, labels, loop, reversed };
+  (lib.AP2_1 = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
     createjs.MovieClip.apply(this, [props]);
     this.instance = new lib.AP2();
     this.instance.setTransform(-959, -538);
@@ -9886,15 +7905,8 @@ const imgs = {};
     this._renderFirstFrame();
   }).prototype = new createjs.MovieClip();
 
-  (lib.proyecto = function (mode, startPosition, loop, reversed) {
-    if (loop == null) {
-      loop = true;
-    }
-    if (reversed == null) {
-      reversed = false;
-    }
-
-    const props = { mode, startPosition, loop, reversed };
+  (lib.proyecto = function (loop = true, reversed = false) {
+    const props = { loop, reversed };
 
     props.labels = {
       intro: 0,
@@ -11636,7 +9648,7 @@ const imgs = {};
     );
 
     this._renderFirstFrame();
-  }).prototype = new Animacion();
+  }).prototype = new createjs.MovieClip();
 
   lib.properties = propiedades;
 })();
